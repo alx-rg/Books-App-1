@@ -13,7 +13,7 @@ Welcome to {{ user.username }}'s profile.
 
     <ul>
     {% for book in user.favorite_books %}
-        <li>Go</li>
+        <li>{{book.title}}</li>
     {% endfor %}
     </ul>
 </p>
