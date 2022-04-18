@@ -5,5 +5,8 @@
 You are visiting the homepage.
 
 <!-- TODO: Display a list of users here, with each linking to their profile -->
+  {% for user in users %}
+    <h2>{{user.username}}</h2>
+  {% endfor %}
 
 {% endblock %}
