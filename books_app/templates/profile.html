@@ -14,6 +14,7 @@ Welcome to {{ user.username }}'s profile.
     <ul>
     {% for book in user.favorite_books %}
         <li>{{book.title}}</li>
+        <small>Written by: {{book.author.name}}</small>
     {% endfor %}
     </ul>
 </p>

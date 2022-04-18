@@ -25,4 +25,4 @@ def profile(username):
     # TODO: Make a query for the user with the given username, and send to the
     # template
     user = User.query.filter_by(username=username).one()
-    return render_template('profile.html', user=user)
+    return render_template('profile.html', user=user, username=username)
